@@ -7,17 +7,15 @@ import { TabBar } from "@/components/TabBar";
 
 export default function Home() {
   return (
-    <main className="flex flex-col">
-      <div className="">
+    <main className="flex flex-col border min-h-screen">
+      <div className="flex-1">
         <Header />
         <Banner />
         <Activity />
         <News />
         <Online />
       </div>
-      <div className="relative">
-        <TabBar />
-      </div>
+      <TabBar />
     </main>
   );
 }

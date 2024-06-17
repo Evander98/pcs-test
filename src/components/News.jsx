@@ -24,7 +24,7 @@ export const News = () => {
     afterChange: (i) => setSelected(i),
   };
   return (
-    <div>
+    <div className="overflow-x-hidden overflow-y-clip mt-5">
       <p className="font-bold px-5 mt-5">PCS News</p>
       <Slider {...settings}>
         {Array.from({ length: 3 }).map((_, index) => (

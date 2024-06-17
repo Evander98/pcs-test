@@ -20,7 +20,7 @@ const Tab = ({ name, Icon, active, isCenter }) => (
     <div
       className={`p-2 ${
         isCenter
-          ? "bg-red-500 rounded-full w-20 h-20 flex items-center justify-center text-white"
+          ? "bg-red-500 rounded-full w-16 h-16 flex items-center justify-center text-white mb-2"
           : "text-gray-500"
       } ${active ? "text-red-500" : ""}`}
     >
@@ -33,7 +33,7 @@ const Tab = ({ name, Icon, active, isCenter }) => (
 );
 
 export const TabBar = () => (
-  <div className="fixed bottom-0 left-0 right-0 bg-white shadow-inner flex justify-around items-end py-2 h-[70px]">
+  <div className="sticky bottom-0 left-0 right-0 bg-white shadow-inner flex justify-around items-end py-1 h-16">
     {tabs.map((tab, index) => (
       <Tab
         key={index}

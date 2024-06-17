@@ -13,7 +13,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} max-h-screen max-w-[390px]`}>
+      <body className={`${inter.className} min-h-screen max-w-[390px] m-auto`}>
         {children}
       </body>
     </html>
